@@ -1,0 +1,176 @@
+:root {
+    /* brand colors */
+    --brand-accent-color: #00856F;
+    --brand-green-lght: #DCE9E2;
+    --brand-grn-lght-02: #F7F9F9;
+    --brand-biege: #FFFAF1;
+    --brand-green-hover: #00453A;
+    --secondary-deep-gray: #212529;
+    --secondary-gray: #495057;
+    --secondary-white: #EDEDED;
+}
+/* ------Common */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+body {
+    box-sizing: border-box;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+.container {
+    max-width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+/* ------HEADER */
+.header {
+    background-color: var(--brand-accent-color);
+    color: var(--brand-grn-lght-02);
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+.nav__item {
+    opacity: 0.6;
+    /* position: relative; */
+}
+.nav__item:hover,
+.nav__item:focus {
+    opacity: 1;
+}
+.nav__item:not(:last-child) {
+    margin-right: 32px;
+}
+.nav__link {
+    display: block;
+
+    padding-top: 25px;
+    padding-bottom: 26px;
+
+    color: inherit;
+}
+.nav__link:hover::after,
+.nav__link:focus::after {
+    content: "";
+    
+    display: block;
+    height: 2px;
+    background-color: var(--brand-grn-lght-02);
+}
+.header__btn {
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: 1px solid var(--secondary-white);
+    color: var(--secondary-white);
+    background-color: var(--brand-accent-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
