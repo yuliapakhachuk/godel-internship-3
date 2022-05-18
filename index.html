@@ -15,9 +15,13 @@
 
 </head>
 <body>
-    <header class="header container">
-        <div class="header__wrapper">
-        <a href="./index.html" class="header__logo">DoctorCare</a>
+    <header class="header">
+        <div class="header__wrapper container">
+        <a href="./index.html" class="header__logo">
+            <svg class="header__logo logo__icon">
+                <use href="./images/icons.svg#logo" width="134" height="19"></use>
+            </svg>
+        </a>
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -42,7 +46,7 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="header__btn btn">Agendar consulta</button>
+            <button type="button" class="header__btn">Agendar consulta</button>
         </div>
     </header>
     <main>
@@ -59,70 +63,79 @@
                     prazo.
                 </p>
                 <button class="head__btn btn">
+                    <span class="btn__icon"></span>
                     Agende sua consulta
                 </button>
+                <div class="header__img--wrapper">
+                    <img src="./images/desktop/desk@1x.png" alt="">
+                    <img class="shadow--img" src="./images/desktop/shadow-desc@1x.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="statistic">
+            <div class="container">
+                <div class="statistic__list">
+                    <div class="statistic__item">
+                        <span class="statistic__numb">+3.500</span>
+                        <p class="statistic__info">Pacientes atendidos</p>
+                    </div>
+                    <div class="statistic__item">
+                        <span class="statistic__numb">+15</span>
+                        <p class="statistic__info">Especialistas disponíveis</p>
+                    </div>
+                    <div class="statistic__item">
+                        <span class="statistic__numb">+10</span>
+                        <p class="statistic__info">Anos no mercado</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="features">
             <div class="container">
-                <ul class="features__statistic-list">
-                    <li class="features__statistic-item">
-                        <span class="statistic__numb">+3.500</span>
-                        <p class="statistic__info">Pacientes atendidos</p>
-                    </li>
-                    <li class="features__statistic-item">
-                        <span class="statistic__numb">+15</span>
-                        <p class="statistic__info">Especialistas disponíveis</p>
-                    </li>
-                    <li class="features__statistic-item">
-                        <span class="statistic__numb">+10</span>
-                        <p class="statistic__info">Anos no mercado</p>
-                    </li>
-                </ul>
                 <h3 class="features__pretitle pretitle">
                     SERVIÇOS
                 </h3>
-                <h2 class="teatures__title title">
+                <h2 class="features__title title">
                     Como podemos ajudá-lo a se sentir melhor?
                 </h2>
                 <div class="grid__wrapper">
                     <div class="grid__item">
-                        <div class="check__icon">Q</div>
+                        <div class="check__icon"></div>
                         <h4 class="card__title">Problemas digestivos</h4>
                         <p class="card__text">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
                         </p>
                     </div>
                     <div class="grid__item">
-                        <div class="check__icon">Q</div>
+                        <div class="check__icon"></div>
                         <h4 class="card__title">Saúde Hormonal</h4>
                         <p class="card__text">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
                         </p>
                     </div>
                     <div class="grid__item">
-                        <div class="check__icon">Q</div>
+                        <div class="check__icon"></div>
                         <h4 class="card__title">Bem-estar mental</h4>
                         <p class="card__text">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
                         </p>
                     </div>
                     <div class="grid__item">
-                        <div class="check__icon">Q</div>
+                        <div class="check__icon"></div>
                         <h4 class="card__title">Cuidados Pediátricos</h4>
                         <p class="card__text">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
                         </p>
                     </div>
                     <div class="grid__item">
-                        <div class="check__icon">Q</div>
+                        <div class="check__icon"></div>
                         <h4 class="card__title">Autoimune e Inflamação</h4>
                         <p class="card__text">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
                         </p>
                     </div>
                     <div class="grid__item">
-                        <div class="check__icon">Q</div>
+                        <div class="check__icon"></div>
                         <h4 class="card__title">Saúde do Coração</h4>
                         <p class="card__text">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
@@ -133,70 +146,86 @@
         </section>
         <section class="doctor">
             <div class="container">
-                <img class="doctor__img img" src="" alt="">
-                <h3 class="doctor__pretitle pretitle">
-                    SOBRE NÓS
-                </h3>
-                <h2 class="doctor__title title">
-                    Entenda quem somos e por que existimos
-                </h2>
-                <p class="doctor__text">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim
-                    mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non
-                    deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt
-                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est
-                    sit aliqua dolor do amet sint.
-                </p>
+                <div class="doctor__img--wrapper image__wrapper">
+                    <img class="doctor__img img" src="./images/desktop/doctor-desc@1x.jpg" alt="doctor is talking to patient">
+                    <!-- <div class="doctor__img--gradient image__gradient"></div> -->
+                </div>
+                <div class="content__wrapper">
+                    <h3 class="doctor__pretitle pretitle">
+                        SOBRE NÓS
+                    </h3>
+                    <h2 class="doctor__title title">
+                        Entenda quem somos e por que existimos
+                    </h2>
+                    <p class="doctor__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim
+                        mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non
+                        deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt
+                        ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est
+                        sit aliqua dolor do amet sint.
+                    </p>
+                </div>
             </div>
         </section>
         <section class="contacts">
             <div class="container">
-                <h2 class="contacts__title">
-                    Entre em contato com a gente!
-                </h2>
-                <address class="contacts__address">
-                    <div class="address__item">
-                        <svg class="address__icon">
-                            <use href="" width="" height=""></use>
-                        </svg>
-                        R. Amauri Souza, 346
-                    </div>
-                    <div class="address__item">
-                        <svg class="address__icon">
-                            <use href="" width="" height=""></use>
-                        </svg>
-                        contato@doctorcare.com
-                    </div>
-                </address>
-                <button class="conacts__btn btn">
-                    Agende sua consulta
-                </button>
-                <img class="contacts__img img" src="" alt="">
+                <div class="contacts__content--wrapper">
+                    <h2 class="contacts__title title">
+                        Entre em contato com a gente!
+                    </h2>
+                    <address class="contacts__address">
+                        <div class="address__item">
+                            <svg class="address__icon">
+                                <use href="./images/icons.svg#pin-map" width="24" height="24"></use>
+                            </svg>
+                            R. Amauri Souza, 346
+                        </div>
+                        <div class="address__item">
+                            <svg class="address__icon">
+                                <use href="./images/icons.svg#mail" width="24" height="24"></use>
+                            </svg>
+                            contato@doctorcare.com
+                        </div>
+                    </address>
+                    <button class="conacts__btn btn">
+                    <span class="btn__icon"></span>
+                        Agende sua consulta
+                    </button>
+                </div>
+
+                <div class="client__img--wrapper image__wrapper">
+                    <img class="client__img img" src="./images/desktop/cliennt-desc@1x.jpg" alt="client is sitting at home and using his device">
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__info">
-                <a href="" class="footer__logo">DoctorCare</a>
-                ©2022 - DoctorCare. 
-                <br>
+                <a href="" class="footer__logo">
+                    <svg class="header__logo logo__icon">
+                        <use href="./images/icons.svg#logo" width="134" height="19"></use>
+                    </svg>
+                </a>
+                <span class="footer__corp">
+                    ©2022 - DoctorCare.
+                </span> 
                 Todos os direitos reservados.
             </div>
             <div class="footer__social">
                 <div class="footer__social-item">
                     <svg class="social__icon">
-                        <use href="" width="" height=""></use>
+                        <use href="./images/icons.svg#instagram" width="24" height="24"></use>
                     </svg>
                 </div>
                 <div class="footer__social-item">
                     <svg class="social__icon">
-                        <use href="" width="" height=""></use>
+                        <use href="./images/icons.svg#f-book" width="24" height="24"></use>
                     </svg>
                 </div>
                 <div class="footer__social-item">
                     <svg class="social__icon">
-                        <use href="" width="" height=""></use>
+                        <use href="./images/icons.svg#icon-youtube-1" width="24" height="24"></use>
                     </svg>
                 </div>
             </div>
