@@ -54,3 +54,6 @@ function changeHeaderStyles() {
         logoIcon.setAttribute("href", "./images/icons.svg#logo-colored");
 
 }
+
+
+
