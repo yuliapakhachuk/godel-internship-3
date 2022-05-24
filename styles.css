@@ -1,5 +1,4 @@
 :root {
-    /* brand colors */
     --brand-accent-color: #00856F;
     --brand-green-lght: #DCE9E2;
     --brand-grn-lght-02: #F7F9F9;
@@ -9,12 +8,10 @@
     --secondary-gray: #495057;
     --secondary-white: #FFFFFF;
 }
-/* ------Common */
 html,
 body,
 div,
 span,
-object,
 h1,
 h2,
 h3,
@@ -25,36 +22,14 @@ p,
 a,
 address,
 img,
-var,
 ol,
 ul,
 li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-figure,
-figcaption,
 footer,
 header,
 menu,
 nav,
-output,
-section,
-summary,
-audio,
-video {
+section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -91,7 +66,6 @@ body {
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
-    /* outline: 1px solid tomato; */
 } 
 
 .btn {
@@ -126,7 +100,6 @@ body {
     color: var(--secondary-deep-gray);
 }
 
-/* ------HEADER */
 .header {
     position: fixed;
     z-index: 2;
@@ -139,7 +112,7 @@ body {
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
-.header.scroled {
+.header.scrolled {
     background-color: var(--brand-accent-color);
     color: var(--brand-grn-lght-02);
 }
@@ -193,7 +166,7 @@ body {
 .nav__item:focus::after {
     opacity: 1;
 }
-.header.scroled .nav__item::after {
+.header.scrolled .nav__item::after {
     background-color: var(--brand-green-lght);
 }
 .header__btn {
@@ -213,20 +186,19 @@ body {
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
-.header.scroled .header__btn {
+.header.scrolled .header__btn {
     color: var(--secondary-white);
     background-color: var(--brand-accent-color);
     border: 1px solid var(--secondary-white);
 }
 
-/* ----MOBILE MENU---------- */
 .mobile__menu--icon {
     display: none;
 }
 .mobile__menu {
     display: none;
 }
-/* ------HEAD------ */
+
 .head {
     position: relative;
     padding-top: 152px;
@@ -287,7 +259,7 @@ body {
     background-size: contain;
     background-position: center;
 }
-/* -------STATISTIC------ */
+
 .statistic {
     background-image: linear-gradient(180deg, #DCE9E2 0% 50%, #F7F9F9 50% 100%);
 }
@@ -298,6 +270,7 @@ body {
     background-color: var(--brand-biege);
     border-radius: 6px;
     border: 1px solid var(--brand-green-lght);
+
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -324,7 +297,7 @@ body {
     line-height: 24px;
     color: var(--brand-accent-color);
 }
-/* ------FEATURES------ */
+
 .features {
     padding-top: 160px;
     padding-bottom: 160px;
@@ -381,7 +354,7 @@ body {
 
     margin-bottom: 16px;
 }
-/* ------DOCTOR------- */
+
 .doctor {
     background-color: var(--brand-biege);
     padding-bottom: 160px;
@@ -403,14 +376,15 @@ body {
     border-radius: 20px;
 }
 .image__wrapper::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    
     background-image: linear-gradient(0deg, rgba(0, 133, 111, 0.15), rgba(0, 133, 111, 0.15));
     border-radius: 20px;
 }
@@ -427,7 +401,7 @@ body {
 .doctor__text {
     line-height: 24px;
 }
-/* ----CONTACTS---- */
+
 .contacts {
     padding-top: 160px;
     padding-bottom: 160px;
@@ -464,9 +438,10 @@ body {
 
     margin-right: 8px;
 }
-/* ----FOOTER----- */
+
 .footer {
     background-color: var(--brand-accent-color);
+
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -502,6 +477,7 @@ body {
 }
 .social__icon {
     fill: var(--brand-biege);
+
     width: 24px;
     height: 24px;
 }
@@ -513,6 +489,7 @@ body {
     .header {
         padding-top: 27px;
         padding-bottom: 27px;
+        border-bottom-color: transparent;
     }
     .nav__list {
         display: none;
@@ -520,11 +497,11 @@ body {
     .header__btn {
         display: none;
     }
-    .header.scroled .mobile__menu--icon {
+    .header.scrolled .mobile__menu--icon {
         stroke: var(--brand-biege);
     }
     .mobile__menu--icon {
-        stroke: #00856F;
+        stroke: var(--brand-accent-color);
         display: block;
         width: 40px;
         height: 40px;
@@ -583,7 +560,6 @@ body {
         transition-duration: 300ms;
         transition-timing-function: ease-in-out;
     }
-            
     .mobile__btn:hover,
     .mobile__btn:focus {
         background-color: var(--brand-accent-color);
@@ -643,6 +619,7 @@ body {
         position: relative;
         left: 0;
         top: 0;
+
         width: 100%;
         max-width: 420px;
         margin-right: auto;
@@ -670,7 +647,7 @@ body {
         display: block;
     }
     .doctor__pretitle {
-    margin-bottom: 16px;
+        margin-bottom: 16px;
     }
     .doctor__text {
         margin-bottom: 60px;
@@ -739,9 +716,3 @@ body {
         padding-left: 24px;
     }
 }
-
-/* ДЛЯ КАРТИНКИ
-element.style {
-    height: 380px;
-    object-fit: cover;
-    object-position: 0px -18px; */
