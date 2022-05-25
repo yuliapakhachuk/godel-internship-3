@@ -205,7 +205,7 @@ body {
     padding-bottom: 84px;
     background-color: var(--brand-green-lght);   
 }
-.header__img--wrapper {
+.head__img--wrapper {
     position: absolute;
     top: 74px;
     left: 57%;
@@ -700,7 +700,7 @@ body {
         max-width: 400px;
         text-align: left;
     }
-    .header__img--wrapper {
+    .head__img--wrapper {
         left: 41%;
     }
     .doctor__img--wrapper {
