@@ -615,7 +615,7 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    .header__img--wrapper {
+    .head__img--wrapper {
         position: relative;
         left: 0;
         top: 0;
@@ -701,6 +701,7 @@ body {
         text-align: left;
     }
     .head__img--wrapper {
+
         left: 41%;
     }
     .doctor__img--wrapper {
